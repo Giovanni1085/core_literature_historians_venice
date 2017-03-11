@@ -12,13 +12,24 @@ This publication is part of the [LinkedBooks project](http://dhlab.epfl.ch/page-
 * `Community explorative igraph.ipynb` TODO
 * `Community metadata evaluation.ipynb` TODO
 * `dataset/`
-    * [citation_data.json](dataset/citation_data.json) the citation dataset among monographs on the history of Venice
+    * [citation_data.p](dataset/citation_data.p) the citation dataset among monographs on the history of Venice in pickle format.
     * [data_description.md](dataset/data_description.md) describes in detail the contents of `citation_data.json`
-    * [directed_edges.csv](dataset/directed_edges.csv) the edgelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Source";"Target";"Type";"Year"`
-    * [directed_nodes.csv](dataset/directed_nodes.csv) the nodelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Id";"Bid";"Title";"Author";"LB";"Year";"Consultation"`
-    * [list_citing_monographs.csv](dataset/list_citing_monographs.csv) the list of parsed monographs, from which citations were extracted. Sep. `;`, Quote `"`. Columns: `"id";"bid";"title";"author";"year";"extracted unique citations"`
-    * [node_stats.csv](dataset/node_stats.csv) the in and outdegree distribution of each node in the network. Sep. `;`, Quote `"`. Columns: `"id";"bid";"title";"author";"lb";"year";"consultation";"indegree";"outdegree";"degree"`
-    * [territorio.csv](dataset/territorio.csv) basic information about all libraries in the Italian Library System (e.g. library code, coordinates. etc.). This data is openly available at <http://opendata.anagrafe.iccu.sbn.it/territorio.zip>.
+    * [citers_subjects.csv](dataset/citers_subjects.csv) the edgelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Source";"Target";"Type";"Year"`
+    * [core_classification.csv](dataset/core_classification.csv) the nodelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Id";"Bid";"Title";"Author";"LB";"Year";"Consultation"`
+    * [core_classification_core.csv](dataset/core_classification_core.csv) the nodelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Id";"Bid";"Title";"Author";"LB";"Year";"Consultation"`
+    * [core_communities_indicators_meta.csv](dataset/core_communities_indicators_meta.csv) the nodelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Id";"Bid";"Title";"Author";"LB";"Year";"Consultation"`
+    * [core_communities_indicators.csv](dataset/core_communities_indicators.csv) the nodelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Id";"Bid";"Title";"Author";"LB";"Year";"Consultation"`
+    * [metadata.df](dataset/metadata.df) the list of parsed monographs, from which citations were extracted. Sep. `;`, Quote `"`. Columns: `"id";"bid";"title";"author";"year";"extracted unique citations"`
+    * [graphs/bibc_1.graphml](dataset/graphs/bibc_1.graphml) the bibliographic coupling network in graphml format, with minimum edge weight of 1 (thus no filtering).
+    * [graphs/bibc_nodes.csv](dataset/graphs/bibc_nodes.csv) the node list of the bibliographic coupling network in csv format, with minimum edge weight of 1 (thus no filtering).
+    * [graphs/bibc_edges.csv](dataset/graphs/bibc_edges.csv) the edge list of the bibliographic coupling network in csv format, with minimum edge weight of 1 (thus no filtering).
+    * [graphs/cocit_2.graphml](dataset/graphs/cocit_2.graphml) the co-citation network in graphml format, with minimum edge weight of 2.
+    * [graphs/cocit_nodes.csv](dataset/graphs/cocit_nodes.csv) the node list of the co-citation network in csv format, with minimum edge weight of 2.
+    * [graphs/cocit_edges.csv](dataset/graphs/cocit_edges.csv) the edge list of the co-citation network in csv format, with minimum edge weight of 2.
+    * [graphs/directed.graphml](dataset/graphs/directed.graphml) the directed network in graphml format, with minimum edge weight of 1 (thus no filtering).
+    * [graphs/directed_nodes.csv](dataset/graphs/directed_nodes.csv) the node list of the directed network in csv format, with minimum edge weight of 1 (thus no filtering).
+    * [graphs/directed_edges.csv](dataset/graphs/directed_edges.csv) the edge list of the directed network in csv format, with minimum edge weight of 1 (thus no filtering).
+    
 
 ## Running the notebooks
 
@@ -45,9 +56,9 @@ The project is supported by the Swiss National Fund, with grants 205121_159961 a
 
 Giovanni Colavizza. (2017). The Core Literature of the Historians of Venice, Frontiers in Digital Humanities, under review.
 
-    @article{colavizza_core_2010,
+    @article{colavizza_core_2017,
       title = {{The Core Literature of the Historians of Venice}},
-      journal = {Frontiers in Digital Humanities, under review},
+      journal = {Frontiers in Digital Humanities, submitted},
       author = {Colavizza, Giovanni},
       year = {2017}
     }
