@@ -8,17 +8,15 @@ This publication is part of the [LinkedBooks project](http://dhlab.epfl.ch/page-
 
 * `LICENCE` MIT
 * `README.md` this file
-* `Descriptive statistics and plots.ipynb` TODO
-* `Community explorative igraph.ipynb` TODO
-* `Community metadata evaluation.ipynb` TODO
+* `Descriptive statistics and plots.ipynb` Replicates most of the plots and tables in the article.
+* `Community explorative igraph.ipynb` Allows to explore several different clustering techniques on the networks.
+* `Community metadata evaluation.ipynb` Given a clustering, it explores it in depth, and considers the structural role of the core literature.
 * `dataset/`
     * [citation_data.p](dataset/citation_data.p) the citation dataset among monographs on the history of Venice in pickle format.
     * [data_description.md](dataset/data_description.md) describes in detail the contents of `citation_data.json`
-    * [citers_subjects.csv](dataset/citers_subjects.csv) the edgelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Source";"Target";"Type";"Year"`
-    * [core_classification.csv](dataset/core_classification.csv) the nodelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Id";"Bid";"Title";"Author";"LB";"Year";"Consultation"`
-    * [core_classification_core.csv](dataset/core_classification_core.csv) the nodelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Id";"Bid";"Title";"Author";"LB";"Year";"Consultation"`
-    * [core_communities_indicators_meta.csv](dataset/core_communities_indicators_meta.csv) the nodelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Id";"Bid";"Title";"Author";"LB";"Year";"Consultation"`
-    * [core_communities_indicators.csv](dataset/core_communities_indicators.csv) the nodelist of the directed citation network. Sep. `;`, Quote `"`. Columns: `"Id";"Bid";"Title";"Author";"LB";"Year";"Consultation"`
+    * [citers_subjects.csv](dataset/citers_subjects.csv) the classification of citing monographs, including the original library classification for comparison. See Section 4 of the article for details. Sep. `;`. Quote `"`. Columns: `"Bid";"Author";"Year";"Title corrected";"General category";"Keywords";"Typology";"Period";"Subjects"`.
+    * [core_classification.csv](dataset/core_classification.csv) the classification of the core literature in the age and type categories (includes all monographs, even outside of the core). Sep. `;`, Quote `"`. Columns: `"id";"bid";"title";"author";"lb";"year";"consultation";"indegree";"outdegree";"degree";"core_type";"core_age"`
+    * [core_classification_core.csv](dataset/core_classification_core.csv) same as core_classification, just limited to the core literature. Sep. `;`, Quote ``. Columns: `id;bid;title;author;lb;year;consultation;indegree;outdegree;degree;core_type;core_age`
     * [metadata.df](dataset/metadata.df) the list of parsed monographs, from which citations were extracted. Sep. `;`, Quote `"`. Columns: `"id";"bid";"title";"author";"year";"extracted unique citations"`
     * [graphs/bibc_1.graphml](dataset/graphs/bibc_1.graphml) the bibliographic coupling network in graphml format, with minimum edge weight of 1 (thus no filtering).
     * [graphs/bibc_nodes.csv](dataset/graphs/bibc_nodes.csv) the node list of the bibliographic coupling network in csv format, with minimum edge weight of 1 (thus no filtering).
