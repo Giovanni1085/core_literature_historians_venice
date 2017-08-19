@@ -1,6 +1,6 @@
 # The Core Literature of the Historians of Venice
 
-Repository to go with the article Colavizza Giovanni "The Core Literature of the Historians of Venice", submitted to Frontiers in Digital Humanities in 2017.
+Repository to go with the article Colavizza Giovanni. (2017). The Core Literature of the Historians of Venice. Frontiers in Digital Humanities, Digital History. DOI: 10.3389/fdigh.2017.00014.
 
 This publication is part of the [LinkedBooks project](http://dhlab.epfl.ch/page-127959-en.html). 
 
@@ -52,11 +52,12 @@ The project is supported by the Swiss National Fund, with grants 205121_159961 a
 
 ## Please cite as
 
-Giovanni Colavizza. (2017). The Core Literature of the Historians of Venice, Frontiers in Digital Humanities, under review.
+Giovanni Colavizza. (2017). The Core Literature of the Historians of Venice. Frontiers in Digital Humanities, Digital History.
 
     @article{colavizza_core_2017,
       title = {{The Core Literature of the Historians of Venice}},
-      journal = {Frontiers in Digital Humanities, submitted},
+      journal = {Frontiers in Digital Humanities},
       author = {Colavizza, Giovanni},
-      year = {2017}
+      year = {2017},
+      doi = {10.3389/fdigh.2017.00014}
     }
